@@ -83,6 +83,7 @@ var createTaskEl = function (taskDataObj) {
         statusSelectEl.className="select-status";
         statusSelectEl.setAttribute("name", "status-change");
         statusSelectEl.setAttribute("data-task-id", taskId);
+        actionContainerEl.appendChild(statusSelectEl);
 
         var statusChoices = ["To Do", "In Progress", "Completed"];
         for (var i = 0; i < statusChoices.length; i++) {
